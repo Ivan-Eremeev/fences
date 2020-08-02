@@ -1,0 +1,484 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-arrow-active-name: 'icon-arrow-active';
+@icon-arrow-active-x: 0px;
+@icon-arrow-active-y: 71px;
+@icon-arrow-active-offset-x: 0px;
+@icon-arrow-active-offset-y: -71px;
+@icon-arrow-active-width: 30px;
+@icon-arrow-active-height: 110px;
+@icon-arrow-active-total-width: 335px;
+@icon-arrow-active-total-height: 291px;
+@icon-arrow-active-image: '../img/sprite.png';
+@icon-arrow-active: 0px 71px 0px -71px 30px 110px 335px 291px '../img/sprite.png' 'icon-arrow-active';
+@icon-arrow-name: 'icon-arrow';
+@icon-arrow-x: 30px;
+@icon-arrow-y: 71px;
+@icon-arrow-offset-x: -30px;
+@icon-arrow-offset-y: -71px;
+@icon-arrow-width: 30px;
+@icon-arrow-height: 110px;
+@icon-arrow-total-width: 335px;
+@icon-arrow-total-height: 291px;
+@icon-arrow-image: '../img/sprite.png';
+@icon-arrow: 30px 71px -30px -71px 30px 110px 335px 291px '../img/sprite.png' 'icon-arrow';
+@icon-brigade-name: 'icon-brigade';
+@icon-brigade-x: 246px;
+@icon-brigade-y: 0px;
+@icon-brigade-offset-x: -246px;
+@icon-brigade-offset-y: 0px;
+@icon-brigade-width: 41px;
+@icon-brigade-height: 59px;
+@icon-brigade-total-width: 335px;
+@icon-brigade-total-height: 291px;
+@icon-brigade-image: '../img/sprite.png';
+@icon-brigade: 246px 0px -246px 0px 41px 59px 335px 291px '../img/sprite.png' 'icon-brigade';
+@icon-calc-name: 'icon-calc';
+@icon-calc-x: 246px;
+@icon-calc-y: 128px;
+@icon-calc-offset-x: -246px;
+@icon-calc-offset-y: -128px;
+@icon-calc-width: 30px;
+@icon-calc-height: 30px;
+@icon-calc-total-width: 335px;
+@icon-calc-total-height: 291px;
+@icon-calc-image: '../img/sprite.png';
+@icon-calc: 246px 128px -246px -128px 30px 30px 335px 291px '../img/sprite.png' 'icon-calc';
+@icon-calc2-name: 'icon-calc2';
+@icon-calc2-x: 246px;
+@icon-calc2-y: 158px;
+@icon-calc2-offset-x: -246px;
+@icon-calc2-offset-y: -158px;
+@icon-calc2-width: 25px;
+@icon-calc2-height: 36px;
+@icon-calc2-total-width: 335px;
+@icon-calc2-total-height: 291px;
+@icon-calc2-image: '../img/sprite.png';
+@icon-calc2: 246px 158px -246px -158px 25px 36px 335px 291px '../img/sprite.png' 'icon-calc2';
+@icon-calc3-active-name: 'icon-calc3-active';
+@icon-calc3-active-x: 287px;
+@icon-calc3-active-y: 98px;
+@icon-calc3-active-offset-x: -287px;
+@icon-calc3-active-offset-y: -98px;
+@icon-calc3-active-width: 48px;
+@icon-calc3-active-height: 48px;
+@icon-calc3-active-total-width: 335px;
+@icon-calc3-active-total-height: 291px;
+@icon-calc3-active-image: '../img/sprite.png';
+@icon-calc3-active: 287px 98px -287px -98px 48px 48px 335px 291px '../img/sprite.png' 'icon-calc3-active';
+@icon-calc3-name: 'icon-calc3';
+@icon-calc3-x: 287px;
+@icon-calc3-y: 50px;
+@icon-calc3-offset-x: -287px;
+@icon-calc3-offset-y: -50px;
+@icon-calc3-width: 48px;
+@icon-calc3-height: 48px;
+@icon-calc3-total-width: 335px;
+@icon-calc3-total-height: 291px;
+@icon-calc3-image: '../img/sprite.png';
+@icon-calc3: 287px 50px -287px -50px 48px 48px 335px 291px '../img/sprite.png' 'icon-calc3';
+@icon-calendar-name: 'icon-calendar';
+@icon-calendar-x: 287px;
+@icon-calendar-y: 0px;
+@icon-calendar-offset-x: -287px;
+@icon-calendar-offset-y: 0px;
+@icon-calendar-width: 48px;
+@icon-calendar-height: 50px;
+@icon-calendar-total-width: 335px;
+@icon-calendar-total-height: 291px;
+@icon-calendar-image: '../img/sprite.png';
+@icon-calendar: 287px 0px -287px 0px 48px 50px 335px 291px '../img/sprite.png' 'icon-calendar';
+@icon-call-name: 'icon-call';
+@icon-call-x: 246px;
+@icon-call-y: 90px;
+@icon-call-offset-x: -246px;
+@icon-call-offset-y: -90px;
+@icon-call-width: 24px;
+@icon-call-height: 38px;
+@icon-call-total-width: 335px;
+@icon-call-total-height: 291px;
+@icon-call-image: '../img/sprite.png';
+@icon-call: 246px 90px -246px -90px 24px 38px 335px 291px '../img/sprite.png' 'icon-call';
+@icon-contract-active-name: 'icon-contract-active';
+@icon-contract-active-x: 42px;
+@icon-contract-active-y: 241px;
+@icon-contract-active-offset-x: -42px;
+@icon-contract-active-offset-y: -241px;
+@icon-contract-active-width: 42px;
+@icon-contract-active-height: 50px;
+@icon-contract-active-total-width: 335px;
+@icon-contract-active-total-height: 291px;
+@icon-contract-active-image: '../img/sprite.png';
+@icon-contract-active: 42px 241px -42px -241px 42px 50px 335px 291px '../img/sprite.png' 'icon-contract-active';
+@icon-contract-name: 'icon-contract';
+@icon-contract-x: 0px;
+@icon-contract-y: 241px;
+@icon-contract-offset-x: 0px;
+@icon-contract-offset-y: -241px;
+@icon-contract-width: 42px;
+@icon-contract-height: 50px;
+@icon-contract-total-width: 335px;
+@icon-contract-total-height: 291px;
+@icon-contract-image: '../img/sprite.png';
+@icon-contract: 0px 241px 0px -241px 42px 50px 335px 291px '../img/sprite.png' 'icon-contract';
+@icon-dewelop-name: 'icon-dewelop';
+@icon-dewelop-x: 246px;
+@icon-dewelop-y: 194px;
+@icon-dewelop-offset-x: -246px;
+@icon-dewelop-offset-y: -194px;
+@icon-dewelop-width: 28px;
+@icon-dewelop-height: 27px;
+@icon-dewelop-total-width: 335px;
+@icon-dewelop-total-height: 291px;
+@icon-dewelop-image: '../img/sprite.png';
+@icon-dewelop: 246px 194px -246px -194px 28px 27px 335px 291px '../img/sprite.png' 'icon-dewelop';
+@icon-facebook-name: 'icon-facebook';
+@icon-facebook-x: 84px;
+@icon-facebook-y: 241px;
+@icon-facebook-offset-x: -84px;
+@icon-facebook-offset-y: -241px;
+@icon-facebook-width: 44px;
+@icon-facebook-height: 44px;
+@icon-facebook-total-width: 335px;
+@icon-facebook-total-height: 291px;
+@icon-facebook-image: '../img/sprite.png';
+@icon-facebook: 84px 241px -84px -241px 44px 44px 335px 291px '../img/sprite.png' 'icon-facebook';
+@icon-form-active-name: 'icon-form-active';
+@icon-form-active-x: 0px;
+@icon-form-active-y: 181px;
+@icon-form-active-offset-x: 0px;
+@icon-form-active-offset-y: -181px;
+@icon-form-active-width: 41px;
+@icon-form-active-height: 60px;
+@icon-form-active-total-width: 335px;
+@icon-form-active-total-height: 291px;
+@icon-form-active-image: '../img/sprite.png';
+@icon-form-active: 0px 181px 0px -181px 41px 60px 335px 291px '../img/sprite.png' 'icon-form-active';
+@icon-form-name: 'icon-form';
+@icon-form-x: 41px;
+@icon-form-y: 181px;
+@icon-form-offset-x: -41px;
+@icon-form-offset-y: -181px;
+@icon-form-width: 41px;
+@icon-form-height: 60px;
+@icon-form-total-width: 335px;
+@icon-form-total-height: 291px;
+@icon-form-image: '../img/sprite.png';
+@icon-form: 41px 181px -41px -181px 41px 60px 335px 291px '../img/sprite.png' 'icon-form';
+@icon-guarantee-name: 'icon-guarantee';
+@icon-guarantee-x: 123px;
+@icon-guarantee-y: 98px;
+@icon-guarantee-offset-x: -123px;
+@icon-guarantee-offset-y: -98px;
+@icon-guarantee-width: 56px;
+@icon-guarantee-height: 55px;
+@icon-guarantee-total-width: 335px;
+@icon-guarantee-total-height: 291px;
+@icon-guarantee-image: '../img/sprite.png';
+@icon-guarantee: 123px 98px -123px -98px 56px 55px 335px 291px '../img/sprite.png' 'icon-guarantee';
+@icon-instagram-name: 'icon-instagram';
+@icon-instagram-x: 186px;
+@icon-instagram-y: 136px;
+@icon-instagram-offset-x: -186px;
+@icon-instagram-offset-y: -136px;
+@icon-instagram-width: 44px;
+@icon-instagram-height: 44px;
+@icon-instagram-total-width: 335px;
+@icon-instagram-total-height: 291px;
+@icon-instagram-image: '../img/sprite.png';
+@icon-instagram: 186px 136px -186px -136px 44px 44px 335px 291px '../img/sprite.png' 'icon-instagram';
+@icon-install-name: 'icon-install';
+@icon-install-x: 186px;
+@icon-install-y: 0px;
+@icon-install-offset-x: -186px;
+@icon-install-offset-y: 0px;
+@icon-install-width: 60px;
+@icon-install-height: 46px;
+@icon-install-total-width: 335px;
+@icon-install-total-height: 291px;
+@icon-install-image: '../img/sprite.png';
+@icon-install: 186px 0px -186px 0px 60px 46px 335px 291px '../img/sprite.png' 'icon-install';
+@icon-installation-active-name: 'icon-installation-active';
+@icon-installation-active-x: 66px;
+@icon-installation-active-y: 57px;
+@icon-installation-active-offset-x: -66px;
+@icon-installation-active-offset-y: -57px;
+@icon-installation-active-width: 57px;
+@icon-installation-active-height: 57px;
+@icon-installation-active-total-width: 335px;
+@icon-installation-active-total-height: 291px;
+@icon-installation-active-image: '../img/sprite.png';
+@icon-installation-active: 66px 57px -66px -57px 57px 57px 335px 291px '../img/sprite.png' 'icon-installation-active';
+@icon-installation-name: 'icon-installation';
+@icon-installation-x: 66px;
+@icon-installation-y: 0px;
+@icon-installation-offset-x: -66px;
+@icon-installation-offset-y: 0px;
+@icon-installation-width: 57px;
+@icon-installation-height: 57px;
+@icon-installation-total-width: 335px;
+@icon-installation-total-height: 291px;
+@icon-installation-image: '../img/sprite.png';
+@icon-installation: 66px 0px -66px 0px 57px 57px 335px 291px '../img/sprite.png' 'icon-installation';
+@icon-loupe-name: 'icon-loupe';
+@icon-loupe-x: 246px;
+@icon-loupe-y: 59px;
+@icon-loupe-offset-x: -246px;
+@icon-loupe-offset-y: -59px;
+@icon-loupe-width: 30px;
+@icon-loupe-height: 31px;
+@icon-loupe-total-width: 335px;
+@icon-loupe-total-height: 291px;
+@icon-loupe-image: '../img/sprite.png';
+@icon-loupe: 246px 59px -246px -59px 30px 31px 335px 291px '../img/sprite.png' 'icon-loupe';
+@icon-make-active-name: 'icon-make-active';
+@icon-make-active-x: 130px;
+@icon-make-active-y: 181px;
+@icon-make-active-offset-x: -130px;
+@icon-make-active-offset-y: -181px;
+@icon-make-active-width: 49px;
+@icon-make-active-height: 49px;
+@icon-make-active-total-width: 335px;
+@icon-make-active-total-height: 291px;
+@icon-make-active-image: '../img/sprite.png';
+@icon-make-active: 130px 181px -130px -181px 49px 49px 335px 291px '../img/sprite.png' 'icon-make-active';
+@icon-make-name: 'icon-make';
+@icon-make-x: 179px;
+@icon-make-y: 181px;
+@icon-make-offset-x: -179px;
+@icon-make-offset-y: -181px;
+@icon-make-width: 49px;
+@icon-make-height: 49px;
+@icon-make-total-width: 335px;
+@icon-make-total-height: 291px;
+@icon-make-image: '../img/sprite.png';
+@icon-make: 179px 181px -179px -181px 49px 49px 335px 291px '../img/sprite.png' 'icon-make';
+@icon-money-name: 'icon-money';
+@icon-money-x: 123px;
+@icon-money-y: 0px;
+@icon-money-offset-x: -123px;
+@icon-money-offset-y: 0px;
+@icon-money-width: 63px;
+@icon-money-height: 49px;
+@icon-money-total-width: 335px;
+@icon-money-total-height: 291px;
+@icon-money-image: '../img/sprite.png';
+@icon-money: 123px 0px -123px 0px 63px 49px 335px 291px '../img/sprite.png' 'icon-money';
+@icon-ok-name: 'icon-ok';
+@icon-ok-x: 287px;
+@icon-ok-y: 192px;
+@icon-ok-offset-x: -287px;
+@icon-ok-offset-y: -192px;
+@icon-ok-width: 45px;
+@icon-ok-height: 44px;
+@icon-ok-total-width: 335px;
+@icon-ok-total-height: 291px;
+@icon-ok-image: '../img/sprite.png';
+@icon-ok: 287px 192px -287px -192px 45px 44px 335px 291px '../img/sprite.png' 'icon-ok';
+@icon-price-name: 'icon-price';
+@icon-price-x: 287px;
+@icon-price-y: 146px;
+@icon-price-offset-x: -287px;
+@icon-price-offset-y: -146px;
+@icon-price-width: 46px;
+@icon-price-height: 46px;
+@icon-price-total-width: 335px;
+@icon-price-total-height: 291px;
+@icon-price-image: '../img/sprite.png';
+@icon-price: 287px 146px -287px -146px 46px 46px 335px 291px '../img/sprite.png' 'icon-price';
+@icon-prize-name: 'icon-prize';
+@icon-prize-x: 0px;
+@icon-prize-y: 0px;
+@icon-prize-offset-x: 0px;
+@icon-prize-offset-y: 0px;
+@icon-prize-width: 66px;
+@icon-prize-height: 71px;
+@icon-prize-total-width: 335px;
+@icon-prize-total-height: 291px;
+@icon-prize-image: '../img/sprite.png';
+@icon-prize: 0px 0px 0px 0px 66px 71px 335px 291px '../img/sprite.png' 'icon-prize';
+@icon-screw-name: 'icon-screw';
+@icon-screw-x: 82px;
+@icon-screw-y: 181px;
+@icon-screw-offset-x: -82px;
+@icon-screw-offset-y: -181px;
+@icon-screw-width: 48px;
+@icon-screw-height: 51px;
+@icon-screw-total-width: 335px;
+@icon-screw-total-height: 291px;
+@icon-screw-image: '../img/sprite.png';
+@icon-screw: 82px 181px -82px -181px 48px 51px 335px 291px '../img/sprite.png' 'icon-screw';
+@icon-size-name: 'icon-size';
+@icon-size-x: 123px;
+@icon-size-y: 153px;
+@icon-size-offset-x: -123px;
+@icon-size-offset-y: -153px;
+@icon-size-width: 32px;
+@icon-size-height: 22px;
+@icon-size-total-width: 335px;
+@icon-size-total-height: 291px;
+@icon-size-image: '../img/sprite.png';
+@icon-size: 123px 153px -123px -153px 32px 22px 335px 291px '../img/sprite.png' 'icon-size';
+@icon-size2-name: 'icon-size2';
+@icon-size2-x: 123px;
+@icon-size2-y: 49px;
+@icon-size2-offset-x: -123px;
+@icon-size2-offset-y: -49px;
+@icon-size2-width: 63px;
+@icon-size2-height: 49px;
+@icon-size2-total-width: 335px;
+@icon-size2-total-height: 291px;
+@icon-size2-image: '../img/sprite.png';
+@icon-size2: 123px 49px -123px -49px 63px 49px 335px 291px '../img/sprite.png' 'icon-size2';
+@icon-size3-name: 'icon-size3';
+@icon-size3-x: 66px;
+@icon-size3-y: 114px;
+@icon-size3-offset-x: -66px;
+@icon-size3-offset-y: -114px;
+@icon-size3-width: 52px;
+@icon-size3-height: 48px;
+@icon-size3-total-width: 335px;
+@icon-size3-total-height: 291px;
+@icon-size3-image: '../img/sprite.png';
+@icon-size3: 66px 114px -66px -114px 52px 48px 335px 291px '../img/sprite.png' 'icon-size3';
+@icon-size4-name: 'icon-size4';
+@icon-size4-x: 246px;
+@icon-size4-y: 221px;
+@icon-size4-offset-x: -246px;
+@icon-size4-offset-y: -221px;
+@icon-size4-width: 39px;
+@icon-size4-height: 16px;
+@icon-size4-total-width: 335px;
+@icon-size4-total-height: 291px;
+@icon-size4-image: '../img/sprite.png';
+@icon-size4: 246px 221px -246px -221px 39px 16px 335px 291px '../img/sprite.png' 'icon-size4';
+@icon-size5-active-name: 'icon-size5-active';
+@icon-size5-active-x: 186px;
+@icon-size5-active-y: 91px;
+@icon-size5-active-offset-x: -186px;
+@icon-size5-active-offset-y: -91px;
+@icon-size5-active-width: 59px;
+@icon-size5-active-height: 45px;
+@icon-size5-active-total-width: 335px;
+@icon-size5-active-total-height: 291px;
+@icon-size5-active-image: '../img/sprite.png';
+@icon-size5-active: 186px 91px -186px -91px 59px 45px 335px 291px '../img/sprite.png' 'icon-size5-active';
+@icon-size5-name: 'icon-size5';
+@icon-size5-x: 186px;
+@icon-size5-y: 46px;
+@icon-size5-offset-x: -186px;
+@icon-size5-offset-y: -46px;
+@icon-size5-width: 59px;
+@icon-size5-height: 45px;
+@icon-size5-total-width: 335px;
+@icon-size5-total-height: 291px;
+@icon-size5-image: '../img/sprite.png';
+@icon-size5: 186px 46px -186px -46px 59px 45px 335px 291px '../img/sprite.png' 'icon-size5';
+@icon-time-name: 'icon-time';
+@icon-time-x: 172px;
+@icon-time-y: 241px;
+@icon-time-offset-x: -172px;
+@icon-time-offset-y: -241px;
+@icon-time-width: 23px;
+@icon-time-height: 23px;
+@icon-time-total-width: 335px;
+@icon-time-total-height: 291px;
+@icon-time-image: '../img/sprite.png';
+@icon-time: 172px 241px -172px -241px 23px 23px 335px 291px '../img/sprite.png' 'icon-time';
+@icon-vk-name: 'icon-vk';
+@icon-vk-x: 128px;
+@icon-vk-y: 241px;
+@icon-vk-offset-x: -128px;
+@icon-vk-offset-y: -241px;
+@icon-vk-width: 44px;
+@icon-vk-height: 44px;
+@icon-vk-total-width: 335px;
+@icon-vk-total-height: 291px;
+@icon-vk-image: '../img/sprite.png';
+@icon-vk: 128px 241px -128px -241px 44px 44px 335px 291px '../img/sprite.png' 'icon-vk';
+@spritesheet-width: 335px;
+@spritesheet-height: 291px;
+@spritesheet-image: '../img/sprite.png';
+@spritesheet-sprites: @icon-arrow-active @icon-arrow @icon-brigade @icon-calc @icon-calc2 @icon-calc3-active @icon-calc3 @icon-calendar @icon-call @icon-contract-active @icon-contract @icon-dewelop @icon-facebook @icon-form-active @icon-form @icon-guarantee @icon-instagram @icon-install @icon-installation-active @icon-installation @icon-loupe @icon-make-active @icon-make @icon-money @icon-ok @icon-price @icon-prize @icon-screw @icon-size @icon-size2 @icon-size3 @icon-size4 @icon-size5-active @icon-size5 @icon-time @icon-vk;
+@spritesheet: 335px 291px '../img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
